@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flappy Bird — Mini-jeu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.svg">
+  <meta name="description" content="Petit jeu Flappy Bird écrit en HTML/CSS/JS — joue avec Espace / Clic / Touch" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <canvas id="game" width="540" height="760" aria-label="Flappy Bird canvas"></canvas>
+
+    <!-- Start / Pause overlay -->
+    <div class="overlay" id="startOverlay">
+      <h1>Flappy Bird</h1>
+      <p class="hint">Appuie sur <strong>ESPACE</strong>, clique ou touche pour voler</p>
+      <div class="controls-row">
+        <button id="startBtn">Démarrer</button>
+      </div>
+      <p id="best" class="best">Meilleur : <span id="bestScore">0</span></p>
+    </div>
+
+    <!-- loading overlay -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Chargement des assets…</p>
+    </div>
+
+    <!-- settings panel -->
+    <div class="panel hidden" id="settingsPanel">
+      <h3>Paramètres</h3>
+      <label>Volume <input id="volume" type="range" min="0" max="1" step="0.01"></label>
+      <label>Difficulté <input id="difficultyRange" type="range" min="0.5" max="2.5" step="0.1"></label>
+      <div class="panel-actions"><button id="closeSettings">Fermer</button></div>
+    </div>
+
+    <!-- Game over modal -->
+    <div class="modal hidden" id="gameOver">
+      <div class="modal-card">
+        <h2>Game Over</h2>
+        <p class="final-score">Score : <span id="finalScore">0</span></p>
+        <p class="final-best">Meilleur : <span id="finalBest">0</span></p>
+        <div class="modal-actions">
+          <button id="restartBtn">Rejouer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- floating score notification container -->
+    <div id="floating"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

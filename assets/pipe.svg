@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="600" viewBox="0 0 180 600">
+	<defs>
+		<linearGradient id="pipeGrad" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0" stop-color="#4ad06a" />
+			<stop offset="1" stop-color="#2da64a" />
+		</linearGradient>
+		<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.18" />
+		</filter>
+	</defs>
+
+	<!-- main pipe body -->
+	<rect x="10" y="0" width="160" height="600" rx="12" fill="url(#pipeGrad)" filter="url(#shadow)" />
+
+	<!-- rim / lip -->
+	<path d="M10 44 C10 20 170 20 170 44 L170 68 C170 44 10 44 10 68 Z" fill="#37924a" />
+
+	<!-- subtle stripes -->
+	<g fill="rgba(255,255,255,0.06)">
+		<rect x="20" y="80" width="6" height="420" rx="3" />
+		<rect x="40" y="60" width="6" height="420" rx="3" />
+		<rect x="60" y="100" width="6" height="420" rx="3" />
+	</g>
+
+	<!-- decorative band -->
+	<rect x="10" y="0" width="160" height="14" rx="7" fill="#2a8f3f" />
+
+</svg>
