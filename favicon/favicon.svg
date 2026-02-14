@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Flappy Bird favicon">
+	<rect width="64" height="64" rx="10" fill="#7ad0dd"></rect>
+	<g transform="translate(6,10)">
+		<ellipse cx="22" cy="18" rx="16" ry="12" fill="#ffdd57" stroke="#f3c14a" stroke-width="1"></ellipse>
+		<circle cx="28" cy="14" r="3.2" fill="#222"></circle>
+		<path d="M36 18 C40 16 44 18 46 22 C44 20 40 22 36 22 Z" fill="#f59e2e"></path>
+	</g>
+</svg></svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
