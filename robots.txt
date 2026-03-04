@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://flappy-bird.alexis-larose.com/sitemap.xml
+Host: https://flappy-bird.alexis-larose.com
